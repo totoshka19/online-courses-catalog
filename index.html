@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Our Online Courses</title>
+		<!-- Подключаем скомпилированный CSS-файл -->
+		<link rel="stylesheet" href="scss/style.css">
+	</head>
+	<body>
+		
+		<main class="main">
+			<section class="courses">
+				<div class="courses__container">
+					<!-- Заголовок секции -->
+					<div class="courses__header">
+						<p class="courses__subtitle">ENJOY YOUR STUDYING!</p>
+						<h1 class="courses__title">Our online courses</h1>
+					</div>
+					
+					<!-- Панель управления: фильтры и поиск -->
+					<div class="courses__controls">
+						<ul class="courses__filter-list">
+							<li class="courses__filter-item">
+								<button class="courses__filter-btn courses__filter-btn--active" data-filter="all" type="button">All</button>
+							</li>
+							<li class="courses__filter-item">
+								<button class="courses__filter-btn" data-filter="Marketing" type="button">Marketing</button>
+							</li>
+							<li class="courses__filter-item">
+								<button class="courses__filter-btn" data-filter="Management" type="button">Management</button>
+							</li>
+							<li class="courses__filter-item">
+								<button class="courses__filter-btn" data-filter="HR & Recruiting" type="button">HR & Recruiting</button>
+							</li>
+							<li class="courses__filter-item">
+								<button class="courses__filter-btn" data-filter="Design" type="button">Design</button>
+							</li>
+							<li class="courses__filter-item">
+								<button class="courses__filter-btn" data-filter="Development" type="button">Development</button>
+							</li>
+						</ul>
+						<form class="courses__search-form" action="#" role="search">
+							<input class="courses__search-input" type="search" placeholder="Search course...">
+						</form>
+					</div>
+					
+					<!-- Сетка для карточек курсов. Она должна быть ПУСТОЙ! -->
+					<!-- JavaScript будет заполнять ее контентом. -->
+					<div class="courses__grid"></div>
+					
+					<!-- Футер секции с кнопкой "Load more" -->
+					<div class="courses__footer">
+						<button class="courses__load-more-btn" type="button">Load more</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<!-- Шаблон для одной карточки курса. -->
+		<!-- Браузер не отображает его, но мы можем клонировать его с помощью JS. -->
+		<template id="course-card-template">
+			<article class="course-card">
+				<div class="course-card__image-wrapper">
+					<img class="course-card__image" src="" alt="">
+					<span class="course-card__category"></span>
+				</div>
+				<div class="course-card__body">
+					<h3 class="course-card__title"></h3>
+					<div class="course-card__meta">
+						<span class="course-card__price"></span>
+						<span class="course-card__author"></span>
+					</div>
+				</div>
+			</article>
+		</template>
+		
+		<!-- Подключаем наш скрипт. Атрибут defer гарантирует, что он выполнится после загрузки HTML. -->
+		<script defer src="main.js"></script>
+	
+	</body>
+</html>

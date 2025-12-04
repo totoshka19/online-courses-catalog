@@ -1,0 +1,24 @@
+{
+  "name": "online-courses-catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totoshka19/online-courses-catalog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/totoshka19/online-courses-catalog/issues"
+  },
+  "homepage": "https://github.com/totoshka19/online-courses-catalog#readme",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
